@@ -6,6 +6,15 @@
   <title>Green Loon Capital — Advisory for the Energy Transition</title>
   <meta name="description" content="Green Loon Capital is a boutique advisory firm focused on energy, infrastructure, and industrial decarbonization — offtake structuring, environmental attribute monetization, and project finance advisory." />
 
+  <!-- Favicons / app icons (relative paths so they work on both pages.dev and the GitHub Pages subpath).
+       Dark-green loon on light tabs; cream loon swaps in for dark-mode tabs; branded tile for mobile. -->
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="assets/favicon-32.png" media="(prefers-color-scheme: light)" />
+  <link rel="icon" type="image/png" href="assets/favicon-32-light.png" media="(prefers-color-scheme: dark)" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/site.webmanifest" />
+  <meta name="theme-color" content="#06140f" />
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,9 +47,7 @@
   <header class="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-forest-950/80 backdrop-blur">
     <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
       <a href="#top" class="flex items-center gap-2.5">
-        <span class="inline-flex items-center justify-center rounded-md bg-white px-1.5 py-1">
-          <img src="assets/logo.jpeg" alt="" class="h-5 w-auto" />
-        </span>
+        <img src="assets/logo-light.png" alt="" class="h-7 w-auto" />
         <span class="font-display text-lg font-medium tracking-tight">Green Loon Capital</span>
       </a>
 
@@ -72,17 +79,9 @@
         radial-gradient(40% 40% at 80% 30%, rgba(15,118,110,0.15), transparent 70%);"></div>
 
     <div class="relative mx-auto flex max-w-4xl flex-col items-center px-6 pt-40 pb-24 text-center md:pt-48 md:pb-32">
-      <!-- Logo medallion: the green-on-white loon sits in a white card so it reads cleanly
-           on the dark hero. File lives at assets/logo.jpeg; falls back to an inline mark if missing. -->
-      <div class="mb-8 inline-flex items-center justify-center rounded-2xl bg-white p-5 shadow-xl shadow-black/30 ring-1 ring-black/5">
-        <img id="brand-logo" src="assets/logo.jpeg" alt="Green Loon Capital"
-             class="h-20 w-auto md:h-24"
-             onerror="this.style.display='none';document.getElementById('brand-logo-fallback').style.display='block';" />
-        <svg id="brand-logo-fallback" viewBox="0 0 64 64" class="hidden h-20 w-20 text-forest-700 md:h-24 md:w-24" aria-hidden="true">
-          <path fill="currentColor" d="M50 22c-3.2 0-6 1.7-7.6 4.3C40.7 19.2 34.4 14 27 14 18.2 14 11 21.2 11 30c0 7.9 5.8 14.5 13.4 15.8-.9 1.3-2.3 2.3-4 2.8-1.1.3-.9 1.9.3 1.9 5.6 0 10.6-2.7 13.7-6.9C46.6 43 54 36.4 54 28c0-1.2-.1-2.3-.4-3.4C52.9 23 51.5 22 50 22Z"/>
-          <circle cx="29" cy="26" r="2.4" fill="#06140f"/>
-        </svg>
-      </div>
+      <!-- Transparent cream loon — floats directly on the dark hero, no white card -->
+      <img src="assets/logo-light.png" alt="Green Loon Capital"
+           class="mb-8 h-24 w-auto drop-shadow-lg md:h-28" />
 
       <h1 class="font-display text-4xl font-medium leading-tight tracking-tight md:text-6xl">
         Capital and commercial strategy<br class="hidden sm:block" /> for the energy transition
@@ -248,9 +247,7 @@
   <footer class="border-t border-white/5 bg-forest-950">
     <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-10 sm:flex-row">
       <div class="flex items-center gap-2.5">
-        <span class="inline-flex items-center justify-center rounded-md bg-white px-1.5 py-1">
-          <img src="assets/logo.jpeg" alt="" class="h-5 w-auto" />
-        </span>
+        <img src="assets/logo-light.png" alt="" class="h-6 w-auto" />
         <span class="font-display font-medium">Green Loon Capital</span>
       </div>
       <p class="text-sm text-cream/50">© <span id="year"></span> Green Loon Capital. All rights reserved.</p>

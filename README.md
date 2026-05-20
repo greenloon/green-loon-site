@@ -21,18 +21,25 @@ python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-## Logo
+## Logo & icons
 
-The loon logo lives at **`assets/logo.jpeg`** (647×323). Because it's a dark
-green loon on a white background, the hero presents it inside a white
-"medallion" so it reads cleanly against the dark page, and the nav and footer
-show it in a small white chip. If the file is ever missing, an inline-SVG loon
-mark is shown as a fallback. To swap the logo, replace `assets/logo.jpeg` (or
-update the `src` references in `index.html` if the filename changes).
+The original supplied logo (`assets/logo.jpeg`, a dark-green loon on white) is
+kept as the source. The transparent assets used by the site are derived from it
+with ImageMagick:
 
-If you'd rather the loon float directly on the dark background with no white
-card, provide a transparent PNG of a light/cream version of the bird and the
-medallion can be dropped.
+- **`assets/logo-light.png`** — the loon recolored cream with its natural dark
+  markings showing through; floats directly on the dark hero/nav/footer (no
+  white box). This is the visible site logo.
+- **`assets/logo-mark.png`** — dark-green loon, transparent background, for use
+  on light surfaces (and the light-tab favicon).
+- **Favicons:** `favicon.ico` + `favicon-32.png` (dark loon, light tabs) and
+  `favicon-32-light.png` (cream loon, dark-mode tabs, via `prefers-color-scheme`).
+- **Mobile / app icons:** `apple-touch-icon.png` (180), `icon-192.png`,
+  `icon-512.png` — a branded dark-green tile with the cream loon — plus
+  `site.webmanifest`.
+
+To regenerate after replacing `logo.jpeg`, the commands are recorded in git
+history; the key one is `magick logo.jpeg -fuzz 18% -transparent white …`.
 
 ## Contact form
 
