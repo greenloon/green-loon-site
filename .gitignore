@@ -1,0 +1,20 @@
+# OS / editor cruft
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+# Optional Tailwind production build output
+node_modules/
+
+# Leftover Python tooling from a prior project sharing this directory
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+build/
+dist/
