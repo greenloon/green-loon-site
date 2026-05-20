@@ -21,12 +21,18 @@ python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-## Add your logo
+## Logo
 
-Drop your logo at **`assets/logo.png`**. Until that file exists, the site shows
-a built-in inline-SVG loon mark so nothing looks broken. A transparent PNG or
-SVG (~200px tall or larger) looks best on the dark background. See
-`assets/README.txt` for details.
+The loon logo lives at **`assets/logo.jpeg`** (647×323). Because it's a dark
+green loon on a white background, the hero presents it inside a white
+"medallion" so it reads cleanly against the dark page, and the nav and footer
+show it in a small white chip. If the file is ever missing, an inline-SVG loon
+mark is shown as a fallback. To swap the logo, replace `assets/logo.jpeg` (or
+update the `src` references in `index.html` if the filename changes).
+
+If you'd rather the loon float directly on the dark background with no white
+card, provide a transparent PNG of a light/cream version of the bird and the
+medallion can be dropped.
 
 ## Contact form
 
